@@ -1,6 +1,0 @@
---cpu Cortex-M0 -g --apcs=interwork --pd "__MICROLIB SETA 1"
--I.\RTE\_LPC11C14_APP
--ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
--ID:\MDK5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx
---pd "__UVISION_VERSION SETA 525" --pd "_RTE_ SETA 1"
---list .\startup_lpc11xx.lst --xref -o .\projectoutput\startup_lpc11xx.o --depend .\projectoutput\startup_lpc11xx.d "..\Core\startup_LPC11xx.s"

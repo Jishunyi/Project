@@ -1,6 +1,0 @@
--c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\App -I ..\Core -I ..\Library -I ..\Customer\Schindler
--I.\RTE\_LPC11C14_APP
--ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
--ID:\MDK5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx
--D__UVISION_VERSION="525" -D_RTE_
--o .\projectoutput\main.o --omf_browse .\projectoutput\main.crf --depend .\projectoutput\main.d "..\App\main.c"

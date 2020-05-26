@@ -1,9 +1,0 @@
-.\projectoutput\drviouart.o: ..\Library\DrvIOUART.c
-.\projectoutput\drviouart.o: D:\MDK5\ARM\ARMCC\Bin\..\include\string.h
-.\projectoutput\drviouart.o: D:\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\projectoutput\drviouart.o: ..\Core\LPC11xx.h
-.\projectoutput\drviouart.o: ..\Core\core_cm0.h
-.\projectoutput\drviouart.o: ..\Core\type.h
-.\projectoutput\drviouart.o: D:\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
-.\projectoutput\drviouart.o: ..\Core\system_LPC11xx.h
-.\projectoutput\drviouart.o: ..\Library\IOUART.h

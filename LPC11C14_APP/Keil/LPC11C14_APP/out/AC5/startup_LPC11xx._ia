@@ -1,1 +1,0 @@
--g --apcs=interwork --cpu Cortex-M0 --pd "__MICROLIB SETA 1" -I.\..\..\App -I.\..\..\Core -I.\..\..\Library -I.\..\..\Customer\Schindler -I.\dependence -I.\src\Library -I.\src\Core -I.\src\App --pd "__UVISION_VERSION SETA 526" --xref -o .\out\AC5\startup_LPC11xx.o .\src\Core\startup_LPC11xx.s
