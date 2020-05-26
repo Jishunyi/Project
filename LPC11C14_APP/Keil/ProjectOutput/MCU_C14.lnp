@@ -1,0 +1,19 @@
+--cpu Cortex-M0
+".\projectoutput\main.o"
+".\projectoutput\logic.o"
+".\projectoutput\user.o"
+".\projectoutput\drviouart.o"
+"..\Library\IOUART.lib"
+".\projectoutput\drvgpio.o"
+".\projectoutput\drvtimer.o"
+".\projectoutput\drvuart.o"
+".\projectoutput\drvsysclk.o"
+".\projectoutput\drvflash.o"
+".\projectoutput\drvcan.o"
+".\projectoutput\core_cm0.o"
+".\projectoutput\system_lpc11xx.o"
+".\projectoutput\startup_lpc11xx.o"
+--library_type=microlib --strict --scatter "..\Core\LPC11C14.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\MCU_C14.map" -o .\ProjectOutput\MCU_C14.axf

@@ -1,0 +1,16 @@
+.\projectoutput\rs485.o: ..\App\rs485.c
+.\projectoutput\rs485.o: ..\App\rs485.h
+.\projectoutput\rs485.o: ..\App\logic.h
+.\projectoutput\rs485.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\projectoutput\rs485.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\projectoutput\rs485.o: ..\Core\LPC11xx.h
+.\projectoutput\rs485.o: ..\Core\core_cm0.h
+.\projectoutput\rs485.o: ..\Core\type.h
+.\projectoutput\rs485.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\projectoutput\rs485.o: ..\Core\system_LPC11xx.h
+.\projectoutput\rs485.o: ..\Library\timer.h
+.\projectoutput\rs485.o: ..\Library\IOUART.h
+.\projectoutput\rs485.o: ..\Library\uart.h
+.\projectoutput\rs485.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\projectoutput\rs485.o: ..\App\systemio.h
+.\projectoutput\rs485.o: ..\App\acquisition.h

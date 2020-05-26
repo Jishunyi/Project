@@ -1,0 +1,16 @@
+--cpu Cortex-M0 --library_type=microlib --scatter "j:\VSCode\Project\LPC11C14_APP\Core\LPC11C14.sct" --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers
+--list .\out\AC5\LPC11C14_APP.map
+.\out\AC5\DrvCAN.o
+.\out\AC5\DrvFlash.o
+.\out\AC5\DrvGPIO.o
+.\out\AC5\DrvIOUART.o
+.\out\AC5\DrvSysClk.o
+.\out\AC5\DrvTimer.o
+.\out\AC5\DrvUART.o
+.\out\AC5\core_cm0.o
+.\out\AC5\system_LPC11xx.o
+.\out\AC5\logic.o
+.\out\AC5\main.o
+.\out\AC5\user.o
+.\out\AC5\startup_LPC11xx.o
+.\src\Library\IOUART.lib -o .\out\AC5\LPC11C14_APP.axf

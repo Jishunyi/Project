@@ -1,0 +1,141 @@
+Dependencies for Project 'LPC11C14', Target 'LPC11C14_APP': (DO NOT MODIFY !)
+F (..\App\main.c)(0x5EC397D2)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\App -I ..\Core -I ..\Library -I ..\Customer\Schindler-I.\RTE\_LPC11C14_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="525" -D_RTE_-o .\projectoutput\main.o --omf_browse .\projectoutput\main.crf --depend .\projectoutput\main.d)
+I (..\Customer\Schindler\user.h)(0x5EB39DB8)
+I (..\App\logic.h)(0x5EB8B9B7)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\Core\LPC11xx.h)(0x5E7951CC)
+I (..\Core\core_cm0.h)(0x5E7951CA)
+I (..\Core\type.h)(0x5E7951CC)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Core\system_LPC11xx.h)(0x5E7951CC)
+I (..\Library\DrvFlash.h)(0x5E7951D4)
+I (..\Library\DrvTimer.h)(0x5E7951D4)
+I (..\Library\DrvSysClk.h)(0x5E7951D4)
+I (..\Library\DrvCAN.h)(0x5E7951D4)
+I (..\Library\DrvGPIO.h)(0x5E7951D4)
+I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\Library\DrvUART.h)(0x5E7951D4)
+I (..\Library\IOUART.h)(0x5E7951D4)
+F (..\App\logic.c)(0x5EC63B2B)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\App -I ..\Core -I ..\Library -I ..\Customer\Schindler-I.\RTE\_LPC11C14_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="525" -D_RTE_-o .\projectoutput\logic.o --omf_browse .\projectoutput\logic.crf --depend .\projectoutput\logic.d)
+I (..\App\logic.h)(0x5EB8B9B7)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\Core\LPC11xx.h)(0x5E7951CC)
+I (..\Core\core_cm0.h)(0x5E7951CA)
+I (..\Core\type.h)(0x5E7951CC)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Core\system_LPC11xx.h)(0x5E7951CC)
+I (..\Library\DrvFlash.h)(0x5E7951D4)
+I (..\Library\DrvTimer.h)(0x5E7951D4)
+I (..\Library\DrvSysClk.h)(0x5E7951D4)
+I (..\Library\DrvCAN.h)(0x5E7951D4)
+I (..\Library\DrvGPIO.h)(0x5E7951D4)
+I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\Library\DrvUART.h)(0x5E7951D4)
+I (..\Library\IOUART.h)(0x5E7951D4)
+I (..\Customer\Schindler\user.h)(0x5EB39DB8)
+F (..\Customer\Schindler\user.c)(0x5EC5EE9C)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\App -I ..\Core -I ..\Library -I ..\Customer\Schindler-I.\RTE\_LPC11C14_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="525" -D_RTE_-o .\projectoutput\user.o --omf_browse .\projectoutput\user.crf --depend .\projectoutput\user.d)
+I (..\Customer\Schindler\user.h)(0x5EB39DB8)
+I (..\App\logic.h)(0x5EB8B9B7)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\Core\LPC11xx.h)(0x5E7951CC)
+I (..\Core\core_cm0.h)(0x5E7951CA)
+I (..\Core\type.h)(0x5E7951CC)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Core\system_LPC11xx.h)(0x5E7951CC)
+I (..\Library\DrvFlash.h)(0x5E7951D4)
+I (..\Library\DrvTimer.h)(0x5E7951D4)
+I (..\Library\DrvSysClk.h)(0x5E7951D4)
+I (..\Library\DrvCAN.h)(0x5E7951D4)
+I (..\Library\DrvGPIO.h)(0x5E7951D4)
+I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\Library\DrvUART.h)(0x5E7951D4)
+I (..\Library\IOUART.h)(0x5E7951D4)
+F (..\Library\DrvIOUART.c)(0x5EA1595D)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\App -I ..\Core -I ..\Library -I ..\Customer\Schindler-I.\RTE\_LPC11C14_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="525" -D_RTE_-o .\projectoutput\drviouart.o --omf_browse .\projectoutput\drviouart.crf --depend .\projectoutput\drviouart.d)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\Core\LPC11xx.h)(0x5E7951CC)
+I (..\Core\core_cm0.h)(0x5E7951CA)
+I (..\Core\type.h)(0x5E7951CC)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Core\system_LPC11xx.h)(0x5E7951CC)
+I (..\Library\IOUART.h)(0x5E7951D4)
+F (..\Library\IOUART.lib)(0x5E7951D4)()
+F (..\Library\DrvGPIO.c)(0x5E7951D4)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\App -I ..\Core -I ..\Library -I ..\Customer\Schindler-I.\RTE\_LPC11C14_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="525" -D_RTE_-o .\projectoutput\drvgpio.o --omf_browse .\projectoutput\drvgpio.crf --depend .\projectoutput\drvgpio.d)
+I (..\Library\DrvGPIO.h)(0x5E7951D4)
+I (..\Core\lpc11xx.h)(0x5E7951CC)
+I (..\Core\core_cm0.h)(0x5E7951CA)
+I (..\Core\type.h)(0x5E7951CC)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Core\system_LPC11xx.h)(0x5E7951CC)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\Library\DrvSysClk.h)(0x5E7951D4)
+F (..\Library\DrvTimer.c)(0x5EA158FE)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\App -I ..\Core -I ..\Library -I ..\Customer\Schindler-I.\RTE\_LPC11C14_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="525" -D_RTE_-o .\projectoutput\drvtimer.o --omf_browse .\projectoutput\drvtimer.crf --depend .\projectoutput\drvtimer.d)
+I (..\Core\LPC11xx.h)(0x5E7951CC)
+I (..\Core\core_cm0.h)(0x5E7951CA)
+I (..\Core\type.h)(0x5E7951CC)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Core\system_LPC11xx.h)(0x5E7951CC)
+I (..\Library\DrvTimer.h)(0x5E7951D4)
+I (..\Library\DrvSysClk.h)(0x5E7951D4)
+F (..\Library\DrvUART.c)(0x5E7951D4)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\App -I ..\Core -I ..\Library -I ..\Customer\Schindler-I.\RTE\_LPC11C14_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="525" -D_RTE_-o .\projectoutput\drvuart.o --omf_browse .\projectoutput\drvuart.crf --depend .\projectoutput\drvuart.d)
+I (..\Library\DrvUART.h)(0x5E7951D4)
+I (..\Library\DrvGPIO.h)(0x5E7951D4)
+I (..\Core\lpc11xx.h)(0x5E7951CC)
+I (..\Core\core_cm0.h)(0x5E7951CA)
+I (..\Core\type.h)(0x5E7951CC)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Core\system_LPC11xx.h)(0x5E7951CC)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\Library\DrvSysClk.h)(0x5E7951D4)
+I (..\App\logic.h)(0x5EB8B9B7)
+I (..\Library\DrvFlash.h)(0x5E7951D4)
+I (..\Library\DrvTimer.h)(0x5E7951D4)
+I (..\Library\DrvCAN.h)(0x5E7951D4)
+I (..\Library\IOUART.h)(0x5E7951D4)
+F (..\Library\DrvSysClk.c)(0x5E7951D4)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\App -I ..\Core -I ..\Library -I ..\Customer\Schindler-I.\RTE\_LPC11C14_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="525" -D_RTE_-o .\projectoutput\drvsysclk.o --omf_browse .\projectoutput\drvsysclk.crf --depend .\projectoutput\drvsysclk.d)
+I (..\Library\DrvSysClk.h)(0x5E7951D4)
+I (..\Core\LPC11xx.h)(0x5E7951CC)
+I (..\Core\core_cm0.h)(0x5E7951CA)
+I (..\Core\type.h)(0x5E7951CC)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Core\system_LPC11xx.h)(0x5E7951CC)
+F (..\Library\DrvFlash.c)(0x5E7951D4)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\App -I ..\Core -I ..\Library -I ..\Customer\Schindler-I.\RTE\_LPC11C14_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="525" -D_RTE_-o .\projectoutput\drvflash.o --omf_browse .\projectoutput\drvflash.crf --depend .\projectoutput\drvflash.d)
+I (..\Library\DrvFlash.h)(0x5E7951D4)
+I (..\Core\LPC11xx.h)(0x5E7951CC)
+I (..\Core\core_cm0.h)(0x5E7951CA)
+I (..\Core\type.h)(0x5E7951CC)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Core\system_LPC11xx.h)(0x5E7951CC)
+F (..\Library\DrvCAN.c)(0x5E7951D4)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\App -I ..\Core -I ..\Library -I ..\Customer\Schindler-I.\RTE\_LPC11C14_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="525" -D_RTE_-o .\projectoutput\drvcan.o --omf_browse .\projectoutput\drvcan.crf --depend .\projectoutput\drvcan.d)
+I (..\Library\DrvCAN.h)(0x5E7951D4)
+I (..\Library\DrvSysClk.h)(0x5E7951D4)
+I (..\Core\LPC11xx.h)(0x5E7951CC)
+I (..\Core\core_cm0.h)(0x5E7951CA)
+I (..\Core\type.h)(0x5E7951CC)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Core\system_LPC11xx.h)(0x5E7951CC)
+I (..\Library\DrvGPIO.h)(0x5E7951D4)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\App\logic.h)(0x5EB8B9B7)
+I (..\Library\DrvFlash.h)(0x5E7951D4)
+I (..\Library\DrvTimer.h)(0x5E7951D4)
+I (..\Library\DrvUART.h)(0x5E7951D4)
+I (..\Library\IOUART.h)(0x5E7951D4)
+F (..\Core\core_cm0.c)(0x5E7951CA)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\App -I ..\Core -I ..\Library -I ..\Customer\Schindler-I.\RTE\_LPC11C14_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="525" -D_RTE_-o .\projectoutput\core_cm0.o --omf_browse .\projectoutput\core_cm0.crf --depend .\projectoutput\core_cm0.d)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+F (..\Core\system_LPC11xx.c)(0x5E7951CC)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I ..\App -I ..\Core -I ..\Library -I ..\Customer\Schindler-I.\RTE\_LPC11C14_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx-D__UVISION_VERSION="525" -D_RTE_-o .\projectoutput\system_lpc11xx.o --omf_browse .\projectoutput\system_lpc11xx.crf --depend .\projectoutput\system_lpc11xx.d)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\Core\LPC11xx.h)(0x5E7951CC)
+I (..\Core\core_cm0.h)(0x5E7951CA)
+I (..\Core\type.h)(0x5E7951CC)
+I (..\Core\system_LPC11xx.h)(0x5E7951CC)
+F (..\Core\startup_LPC11xx.s)(0x5E7951CC)(--cpu Cortex-M0 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_LPC11C14_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx--pd "__UVISION_VERSION SETA 525" --pd "_RTE_ SETA 1"--list .\startup_lpc11xx.lst --xref -o .\projectoutput\startup_lpc11xx.o --depend .\projectoutput\startup_lpc11xx.d)
