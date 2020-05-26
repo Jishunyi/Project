@@ -1,0 +1,1 @@
+-c -g --apcs=interwork --cpu Cortex-M0 -D__MICROLIB -O0 -Ie:\完成项目\海外蒂森\LPC11C14_APP\App -Ie:\完成项目\海外蒂森\LPC11C14_APP\Core -Ie:\完成项目\海外蒂森\LPC11C14_APP\Library -Ie:\完成项目\海外蒂森\LPC11C14_APP\Customer\Schindler -I.\dependence -I.\src\Library -I.\src\Core -I.\src\App -D__UVISION_VERSION="526" -o .\out\AC5\DrvIOUART.o .\src\Library\DrvIOUART.c

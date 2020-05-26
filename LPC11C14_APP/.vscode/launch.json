@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceRoot}",
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "cortex-debug launch",
+            "servertype": "jlink",
+            "interface": "swd",
+            "executable": ".\\out\\AC5\\LPC11C14_APP.axf",
+            "runToMain": true
+        }
+    ]
+}

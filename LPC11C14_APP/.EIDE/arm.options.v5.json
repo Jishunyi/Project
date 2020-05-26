@@ -1,0 +1,13 @@
+{
+    "global": {
+        "use-microLIB": true
+    },
+    "c/cpp-compiler": {
+        "optimization": "level-0",
+        "warnings": "unspecified"
+    },
+    "asm-compiler": {},
+    "linker": {},
+    "beforeBuildTasks": [],
+    "afterBuildTasks": []
+}
