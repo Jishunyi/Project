@@ -17,7 +17,9 @@
                         ".\\dependence",
                         ".\\src\\Library",
                         ".\\src\\Core",
-                        ".\\src\\App"
+                        ".\\src\\App",
+                        ".\\src",
+                        ".\\src\\$$CMSIS"
                     ],
                     "libList": [],
                     "sourceDirList": [],
