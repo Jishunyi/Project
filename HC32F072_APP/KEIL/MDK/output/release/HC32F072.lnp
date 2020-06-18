@@ -1,0 +1,18 @@
+--cpu Cortex-M0+
+".\output\release\uart_pro.o"
+".\output\release\can_pro.o"
+".\output\release\main_uart.o"
+".\output\release\user.o"
+".\output\release\system_hc32f072.o"
+".\output\release\startup_hc32f072.o"
+".\output\release\interrupts_hc32f072.o"
+".\output\release\ddl.o"
+".\output\release\sysctrl.o"
+".\output\release\gpio.o"
+".\output\release\can.o"
+".\output\release\uart.o"
+".\output\release\flash.o"
+--library_type=microlib --strict --scatter ".\output\release\HC32F072.sct"
+--keep=*Handler --summary_stderr --info summarysizes --map --load_addr_map_info --symbols
+--info sizes --info totals
+--list ".\output\release\HC32F072.map" -o .\output\release\HC32F072.axf
