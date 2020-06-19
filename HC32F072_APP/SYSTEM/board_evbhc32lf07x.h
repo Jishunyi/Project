@@ -90,8 +90,8 @@
 
 #ifdef BOARD_EVBHC32LF07X_V11
 ///< LED GREEN
-#define EVB_LEDG_PORT        GpioPortE
-#define EVB_LEDG_PIN         GpioPin0
+#define EVB_LEDG_PORT        GpioPortA
+#define EVB_LEDG_PIN         GpioPin15
 ///< LED BLUE
 #define EVB_LEDB_PORT        GpioPortE
 #define EVB_LEDB_PIN         GpioPin1

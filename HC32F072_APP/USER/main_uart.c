@@ -3,23 +3,17 @@
  * @Author       : Shunyi
  * @Date         : 2020-06-10 08:29:05
  * @LastEditors  : Shunyi
- * @LastEditTime : 2020-06-16 09:24:10
+ * @LastEditTime : 2020-06-18 15:03:00
  ******************************************************************************/
 
 /******************************************************************************
  * Include files
  ******************************************************************************/
-#include "uart_pro.h"
 #include "user.h"
-#include "stdlib.h"
-#include "uart.h"
 
 /******************************************************************************
  * Local variable definitions ('static')                                      *
  ******************************************************************************/
-extern stc_uart_datatompu_t DataToMPU;
-extern uint8_t DataFromMPUFlag; 		//显示屏回传指令的标志位 //1为接收到数据
-extern uint8_t Uart1RxData[];						//待接收数据
 
 /******************************************************************************/
 /**\function 	main()
@@ -28,17 +22,18 @@ extern uint8_t Uart1RxData[];						//待接收数据
  ******************************************************************************/
 int32_t main(void)
 {    
-		//UART1初始化
-		App_Uart1Init();
-		memset((void *)Uart1RxData, 0, UartReceiveMax);
-	
+		//系统初始化
+		System_Init();
+		
     while(1)
     {
-				if(DataFromMPUFlag == 1)
+				SendToMPU(); //发送指令到显示屏
+				
+				while(1)
 				{		
-						App_UartSend(M0P_UART1, Uart1RxData, 8); //发送数据
-						DataFromMPUFlag = 0;
-				}				
+						Wdt_Feed(); //喂狗
+						ParseFromMPU(); //解析显示屏回传数据
+				}
     }
 }
 

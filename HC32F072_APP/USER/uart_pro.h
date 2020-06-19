@@ -3,7 +3,7 @@
  * @Author       : Shunyi
  * @Date         : 2020-06-11 08:33:55
  * @LastEditors  : Shunyi
- * @LastEditTime : 2020-06-16 08:51:37
+ * @LastEditTime : 2020-06-18 15:03:00
  ******************************************************************************/
  
 #ifndef  __UART_PRO_H_
@@ -12,7 +12,10 @@
 /******************************************************************************
  * Include files
  ******************************************************************************/
-#include "sysctrl.h"
+#include "gpio.h"
+#include "uart.h"
+
+#include "user.h"
 
 /******************************************************************************
  * Local pre-processor symbols/macros ('#define')                            
@@ -24,10 +27,9 @@
  * Function implementation
  ******************************************************************************/
 void App_Uart1PortInit(void); //UART1引脚配置
-void App_Uart1Cfg(void); //UART1参数配置
-void App_Uart1Init(void); //UART1初始化
-void App_UartSend(M0P_UART_TypeDef* UARTx, const uint8_t * DataSendBuffer, const uint8_t DataSendBufferLen); //串口发送数据
-void App_ReceiveDataSet(const uint8_t DataReceiveBufferLen); //串口接收数据配置
+void App_Uart1Cfg(uint32_t Baud); //UART1参数配置 //传入波特率
+void App_Uart1Init(uint32_t Baud); //UART1初始化 //传入波特率
+void App_UartSend(M0P_UART_TypeDef* UARTx, const uint8_t * DataSendBuffer, const uint8_t DataSendBufferLen); //UART发送数据
 
 #endif
 /******************************************************************************

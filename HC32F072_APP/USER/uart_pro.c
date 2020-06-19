@@ -3,17 +3,13 @@
  * @Author       : Shunyi
  * @Date         : 2020-06-11 08:33:55
  * @LastEditors  : Shunyi
- * @LastEditTime : 2020-06-16 08:51:37
+ * @LastEditTime : 2020-06-18 15:03:00
  ******************************************************************************/
 
 /******************************************************************************
  * Include files
  ******************************************************************************/
-#include "gpio.h"
-#include "uart.h"
 #include "uart_pro.h"
-#include "user.h"
-#include "stdlib.h"
 
 /******************************************************************************
  * Local variable definitions ('static')                                      *
@@ -26,6 +22,8 @@ uint8_t Uart1TxData[UartSendMax];							//待发送数据
 uint8_t Uart1RxData[UartReceiveMax];					//待接收数据
 
 extern uint8_t DataFromMPUFlag; 		//显示屏回传指令的标志位 //1为接收到数据
+extern uint8_t DataToMPUBuffer[DataToMPULen]; 				//控制显示屏的指令 //待发送
+extern uint8_t DataFromMPUBuffer[DataFromMPULen]; 		//显示屏回传的指令
 
 /*******************************************************************************
  * Function implementation - global ('extern') and local ('static')
@@ -36,7 +34,7 @@ void Uart1_IRQHandler(void)
     if(Uart_GetStatus(M0P_UART1, UartRC))         								//UART1数据接收
     { 
 				Uart_ClrStatus(M0P_UART1, UartRC);        								//清中断状态位			
-				Uart1RxData[Uart1RxCnt] = Uart_ReceiveData(M0P_UART1);	
+				Uart1RxData[Uart1RxCnt] = Uart_ReceiveData(M0P_UART1);		//接收数据
 			
 				Uart1RxCnt++;
 				DataFromMPUFlag = 0; //接收未完成
@@ -45,6 +43,8 @@ void Uart1_IRQHandler(void)
 				{
 						Uart1RxCnt = 0;
 						DataFromMPUFlag = 1; //接收完成
+						memcpy((void *)DataFromMPUBuffer, Uart1RxData, DataFromMPULen); //将接收到的数据取出
+					
 						Uart_DisableIrq(M0P_UART1, UartRxIrq);            		//禁止UART1接收功能
             Uart_EnableIrq(M0P_UART1, UartTxIrq);              		//使能UART1发送功能
 				}
@@ -87,8 +87,8 @@ void App_Uart1PortInit(void)
     Gpio_SetAfMode(GpioPortA, GpioPin3, GpioAf1);          //配置PA03 端口为URART1_RX
 }
 
-//UART1参数配置
-void App_Uart1Cfg(void)
+//UART1参数配置 //传入波特率
+void App_Uart1Cfg(uint32_t Baud)
 {
     stc_uart_cfg_t  stcCfg;
     stc_uart_multimode_t stcMulti;
@@ -105,7 +105,7 @@ void App_Uart1Cfg(void)
     stcCfg.enRunMode = UartMskMode1;                	//模式1 //模式2无数据 //模式3多字节数据有误
     stcCfg.enStopBit = UartMsk1bit;                 	//1bit停止位
     stcCfg.enMmdorCk = UartMskEven;                 	//偶检验
-    stcCfg.stcBaud.u32Baud = 9600;                  	//波特率9600
+    stcCfg.stcBaud.u32Baud = Baud;                  	//波特率
     stcCfg.stcBaud.enClkDiv = UartMsk8Or16Div;      	//通道采样分频配置
     stcCfg.stcBaud.u32Pclk = Sysctrl_GetPClkFreq(); 	//获得外设时钟（PCLK）频率值
     Uart_Init(M0P_UART1, &stcCfg);                  	//串口初始化
@@ -118,16 +118,16 @@ void App_Uart1Cfg(void)
     EnableNvic(UART1_3_IRQn, IrqLevel3, TRUE); 				//系统中断使能
 }
 
-//UART1初始化
-void App_Uart1Init(void)
+//UART1初始化 //传入波特率
+void App_Uart1Init(uint32_t Baud)
 {
 		//UART1引脚配置
 		App_Uart1PortInit();
 		//UART1参数配置
-		App_Uart1Cfg();
+		App_Uart1Cfg(Baud);
 }
 
-void App_UartSend(M0P_UART_TypeDef* UARTx, const uint8_t *DataSendBuffer, const uint8_t DataSendBufferLen) //串口发送数据
+void App_UartSend(M0P_UART_TypeDef* UARTx, const uint8_t *DataSendBuffer, const uint8_t DataSendBufferLen) //UART发送数据
 {
 		//使能串口发送中断
 		Uart_EnableIrq(UARTx, UartTxIrq);   

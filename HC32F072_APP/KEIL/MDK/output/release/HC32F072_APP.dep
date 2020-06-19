@@ -1,6 +1,7 @@
 Dependencies for Project 'HC32F072', Target 'APP': (DO NOT MODIFY !)
-F (..\..\USER\uart_pro.c)(0x5EEAC112)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\uart_pro.o --omf_browse .\output\release\uart_pro.crf --depend .\output\release\uart_pro.d)
-I (..\..\DRIVER\inc\gpio.h)(0x5D2C69D8)
+F (..\..\USER\can_pro.c)(0x5EEB1213)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\can_pro.o --omf_browse .\output\release\can_pro.crf --depend .\output\release\can_pro.d)
+I (..\..\USER\can_pro.h)(0x5EEB121D)
+I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
 I (..\..\DRIVER\inc\ddl.h)(0x5D0877E4)
 I (..\..\SYSTEM\base_types.h)(0x5D2C6AB4)
 I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
@@ -8,44 +9,20 @@ I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (D:\MDK5\ARM\ARMCC\include\assert.h)(0x599ECD2A)
-I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EE3285F)
+I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EEADA92)
 I (..\..\SYSTEM\hc32f072.h)(0x5CE10284)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0plus.h)(0x5A8E1FE2)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h)(0x5A5595E2)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_compiler.h)(0x5A8E1FE2)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h)(0x5A8E1FE2)
 I (..\..\SYSTEM\system_hc32f072.h)(0x5CE10E47)
-I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
 I (..\..\SYSTEM\interrupts_hc32f072.h)(0x5CE115AB)
 I (..\..\DRIVER\inc\ddl_device.h)(0x5D32DBF3)
-I (..\..\DRIVER\inc\uart.h)(0x5D2C6849)
-I (..\..\USER\uart_pro.h)(0x5EE97137)
-I (..\..\USER\user.h)(0x5EE98DA3)
-I (D:\MDK5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
-F (..\..\USER\can_pro.c)(0x5EE82181)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\can_pro.o --omf_browse .\output\release\can_pro.crf --depend .\output\release\can_pro.d)
-I (..\..\DRIVER\inc\gpio.h)(0x5D2C69D8)
-I (..\..\DRIVER\inc\ddl.h)(0x5D0877E4)
-I (..\..\SYSTEM\base_types.h)(0x5D2C6AB4)
-I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
-I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (D:\MDK5\ARM\ARMCC\include\assert.h)(0x599ECD2A)
-I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EE3285F)
-I (..\..\SYSTEM\hc32f072.h)(0x5CE10284)
-I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0plus.h)(0x5A8E1FE2)
-I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h)(0x5A5595E2)
-I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_compiler.h)(0x5A8E1FE2)
-I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h)(0x5A8E1FE2)
-I (..\..\SYSTEM\system_hc32f072.h)(0x5CE10E47)
-I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
-I (..\..\SYSTEM\interrupts_hc32f072.h)(0x5CE115AB)
-I (..\..\DRIVER\inc\ddl_device.h)(0x5D32DBF3)
-I (..\..\USER\can_pro.h)(0x5EE81F62)
 I (..\..\DRIVER\inc\can.h)(0x5D244681)
-F (..\..\USER\main_uart.c)(0x5EEAC127)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\main_uart.o --omf_browse .\output\release\main_uart.crf --depend .\output\release\main_uart.d)
-I (..\..\USER\uart_pro.h)(0x5EE97137)
-I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
+I (..\..\DRIVER\inc\gpio.h)(0x5D2C69D8)
+F (..\..\USER\uart_pro.c)(0x5EEB11EF)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\uart_pro.o --omf_browse .\output\release\uart_pro.crf --depend .\output\release\uart_pro.d)
+I (..\..\USER\uart_pro.h)(0x5EEB11EC)
+I (..\..\DRIVER\inc\gpio.h)(0x5D2C69D8)
 I (..\..\DRIVER\inc\ddl.h)(0x5D0877E4)
 I (..\..\SYSTEM\base_types.h)(0x5D2C6AB4)
 I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
@@ -53,21 +30,24 @@ I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (D:\MDK5\ARM\ARMCC\include\assert.h)(0x599ECD2A)
-I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EE3285F)
+I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EEADA92)
 I (..\..\SYSTEM\hc32f072.h)(0x5CE10284)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0plus.h)(0x5A8E1FE2)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h)(0x5A5595E2)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_compiler.h)(0x5A8E1FE2)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h)(0x5A8E1FE2)
 I (..\..\SYSTEM\system_hc32f072.h)(0x5CE10E47)
+I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
 I (..\..\SYSTEM\interrupts_hc32f072.h)(0x5CE115AB)
 I (..\..\DRIVER\inc\ddl_device.h)(0x5D32DBF3)
-I (..\..\USER\user.h)(0x5EE98DA3)
-I (D:\MDK5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
 I (..\..\DRIVER\inc\uart.h)(0x5D2C6849)
-F (..\..\USER\user.c)(0x5EE960DB)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\user.o --omf_browse .\output\release\user.crf --depend .\output\release\user.d)
-I (..\..\USER\user.h)(0x5EE98DA3)
-I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
+I (..\..\USER\user.h)(0x5EEB11CE)
+I (..\..\USER\wdt_pro.h)(0x5EEB11D7)
+I (..\..\DRIVER\inc\wdt.h)(0x5D2C687F)
+I (..\..\USER\gpio_pro.h)(0x5EEB11E0)
+F (..\..\USER\gpio_pro.c)(0x5EEB11BB)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\gpio_pro.o --omf_browse .\output\release\gpio_pro.crf --depend .\output\release\gpio_pro.d)
+I (..\..\USER\gpio_pro.h)(0x5EEB11E0)
+I (..\..\DRIVER\inc\gpio.h)(0x5D2C69D8)
 I (..\..\DRIVER\inc\ddl.h)(0x5D0877E4)
 I (..\..\SYSTEM\base_types.h)(0x5D2C6AB4)
 I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
@@ -75,15 +55,87 @@ I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (D:\MDK5\ARM\ARMCC\include\assert.h)(0x599ECD2A)
-I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EE3285F)
+I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EEADA92)
 I (..\..\SYSTEM\hc32f072.h)(0x5CE10284)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0plus.h)(0x5A8E1FE2)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h)(0x5A5595E2)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_compiler.h)(0x5A8E1FE2)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h)(0x5A8E1FE2)
 I (..\..\SYSTEM\system_hc32f072.h)(0x5CE10E47)
+I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
 I (..\..\SYSTEM\interrupts_hc32f072.h)(0x5CE115AB)
 I (..\..\DRIVER\inc\ddl_device.h)(0x5D32DBF3)
+F (..\..\USER\wdt_pro.c)(0x5EEB11C0)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\wdt_pro.o --omf_browse .\output\release\wdt_pro.crf --depend .\output\release\wdt_pro.d)
+I (..\..\USER\wdt_pro.h)(0x5EEB11D7)
+I (..\..\DRIVER\inc\wdt.h)(0x5D2C687F)
+I (..\..\DRIVER\inc\ddl.h)(0x5D0877E4)
+I (..\..\SYSTEM\base_types.h)(0x5D2C6AB4)
+I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (D:\MDK5\ARM\ARMCC\include\assert.h)(0x599ECD2A)
+I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EEADA92)
+I (..\..\SYSTEM\hc32f072.h)(0x5CE10284)
+I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0plus.h)(0x5A8E1FE2)
+I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h)(0x5A5595E2)
+I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_compiler.h)(0x5A8E1FE2)
+I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h)(0x5A8E1FE2)
+I (..\..\SYSTEM\system_hc32f072.h)(0x5CE10E47)
+I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
+I (..\..\SYSTEM\interrupts_hc32f072.h)(0x5CE115AB)
+I (..\..\DRIVER\inc\ddl_device.h)(0x5D32DBF3)
+I (..\..\DRIVER\inc\gpio.h)(0x5D2C69D8)
+F (..\..\USER\user.c)(0x5EEB11C6)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\user.o --omf_browse .\output\release\user.crf --depend .\output\release\user.d)
+I (..\..\USER\user.h)(0x5EEB11CE)
+I (..\..\USER\uart_pro.h)(0x5EEB11EC)
+I (..\..\DRIVER\inc\gpio.h)(0x5D2C69D8)
+I (..\..\DRIVER\inc\ddl.h)(0x5D0877E4)
+I (..\..\SYSTEM\base_types.h)(0x5D2C6AB4)
+I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (D:\MDK5\ARM\ARMCC\include\assert.h)(0x599ECD2A)
+I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EEADA92)
+I (..\..\SYSTEM\hc32f072.h)(0x5CE10284)
+I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0plus.h)(0x5A8E1FE2)
+I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h)(0x5A5595E2)
+I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_compiler.h)(0x5A8E1FE2)
+I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h)(0x5A8E1FE2)
+I (..\..\SYSTEM\system_hc32f072.h)(0x5CE10E47)
+I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
+I (..\..\SYSTEM\interrupts_hc32f072.h)(0x5CE115AB)
+I (..\..\DRIVER\inc\ddl_device.h)(0x5D32DBF3)
+I (..\..\DRIVER\inc\uart.h)(0x5D2C6849)
+I (..\..\USER\wdt_pro.h)(0x5EEB11D7)
+I (..\..\DRIVER\inc\wdt.h)(0x5D2C687F)
+I (..\..\USER\gpio_pro.h)(0x5EEB11E0)
+F (..\..\USER\main_uart.c)(0x5EEB1222)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\main_uart.o --omf_browse .\output\release\main_uart.crf --depend .\output\release\main_uart.d)
+I (..\..\USER\user.h)(0x5EEB11CE)
+I (..\..\USER\uart_pro.h)(0x5EEB11EC)
+I (..\..\DRIVER\inc\gpio.h)(0x5D2C69D8)
+I (..\..\DRIVER\inc\ddl.h)(0x5D0877E4)
+I (..\..\SYSTEM\base_types.h)(0x5D2C6AB4)
+I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (D:\MDK5\ARM\ARMCC\include\assert.h)(0x599ECD2A)
+I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EEADA92)
+I (..\..\SYSTEM\hc32f072.h)(0x5CE10284)
+I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0plus.h)(0x5A8E1FE2)
+I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h)(0x5A5595E2)
+I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_compiler.h)(0x5A8E1FE2)
+I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h)(0x5A8E1FE2)
+I (..\..\SYSTEM\system_hc32f072.h)(0x5CE10E47)
+I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
+I (..\..\SYSTEM\interrupts_hc32f072.h)(0x5CE115AB)
+I (..\..\DRIVER\inc\ddl_device.h)(0x5D32DBF3)
+I (..\..\DRIVER\inc\uart.h)(0x5D2C6849)
+I (..\..\USER\wdt_pro.h)(0x5EEB11D7)
+I (..\..\DRIVER\inc\wdt.h)(0x5D2C687F)
+I (..\..\USER\gpio_pro.h)(0x5EEB11E0)
 F (..\..\SYSTEM\system_hc32f072.c)(0x5CE10E29)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\system_hc32f072.o --omf_browse .\output\release\system_hc32f072.crf --depend .\output\release\system_hc32f072.d)
 I (..\..\SYSTEM\base_types.h)(0x5D2C6AB4)
 I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
@@ -99,7 +151,7 @@ I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h)(0x5A8E1FE2)
 I (..\..\SYSTEM\system_hc32f072.h)(0x5CE10E47)
 I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
 I (..\..\DRIVER\inc\ddl.h)(0x5D0877E4)
-I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EE3285F)
+I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EEADA92)
 I (..\..\SYSTEM\interrupts_hc32f072.h)(0x5CE115AB)
 I (..\..\DRIVER\inc\ddl_device.h)(0x5D32DBF3)
 F (.\startup_hc32f072.s)(0x5D33DA90)(--cpu Cortex-M0+ -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include--pd "__UVISION_VERSION SETA 525" --pd "_RTE_ SETA 1"-o .\output\release\startup_hc32f072.o --depend .\output\release\startup_hc32f072.d)
@@ -111,7 +163,7 @@ I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (D:\MDK5\ARM\ARMCC\include\assert.h)(0x599ECD2A)
-I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EE3285F)
+I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EEADA92)
 I (..\..\SYSTEM\hc32f072.h)(0x5CE10284)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0plus.h)(0x5A8E1FE2)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h)(0x5A5595E2)
@@ -129,7 +181,7 @@ I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (D:\MDK5\ARM\ARMCC\include\assert.h)(0x599ECD2A)
-I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EE3285F)
+I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EEADA92)
 I (..\..\SYSTEM\hc32f072.h)(0x5CE10284)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0plus.h)(0x5A8E1FE2)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h)(0x5A5595E2)
@@ -148,7 +200,7 @@ I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (D:\MDK5\ARM\ARMCC\include\assert.h)(0x599ECD2A)
-I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EE3285F)
+I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EEADA92)
 I (..\..\SYSTEM\hc32f072.h)(0x5CE10284)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0plus.h)(0x5A8E1FE2)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h)(0x5A5595E2)
@@ -166,7 +218,7 @@ I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (D:\MDK5\ARM\ARMCC\include\assert.h)(0x599ECD2A)
-I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EE3285F)
+I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EEADA92)
 I (..\..\SYSTEM\hc32f072.h)(0x5CE10284)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0plus.h)(0x5A8E1FE2)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h)(0x5A5595E2)
@@ -185,7 +237,7 @@ I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (D:\MDK5\ARM\ARMCC\include\assert.h)(0x599ECD2A)
-I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EE3285F)
+I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EEADA92)
 I (..\..\SYSTEM\hc32f072.h)(0x5CE10284)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0plus.h)(0x5A8E1FE2)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h)(0x5A5595E2)
@@ -204,7 +256,7 @@ I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (D:\MDK5\ARM\ARMCC\include\assert.h)(0x599ECD2A)
-I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EE3285F)
+I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EEADA92)
 I (..\..\SYSTEM\hc32f072.h)(0x5CE10284)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0plus.h)(0x5A8E1FE2)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h)(0x5A5595E2)
@@ -214,8 +266,8 @@ I (..\..\SYSTEM\system_hc32f072.h)(0x5CE10E47)
 I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
 I (..\..\SYSTEM\interrupts_hc32f072.h)(0x5CE115AB)
 I (..\..\DRIVER\inc\ddl_device.h)(0x5D32DBF3)
-F (..\..\DRIVER\src\flash.c)(0x5D19E235)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\flash.o --omf_browse .\output\release\flash.crf --depend .\output\release\flash.d)
-I (..\..\DRIVER\inc\flash.h)(0x5CDD4F7B)
+F (..\..\DRIVER\src\wdt.c)(0x5D0B3E8C)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\wdt.o --omf_browse .\output\release\wdt.crf --depend .\output\release\wdt.d)
+I (..\..\DRIVER\inc\wdt.h)(0x5D2C687F)
 I (..\..\DRIVER\inc\ddl.h)(0x5D0877E4)
 I (..\..\SYSTEM\base_types.h)(0x5D2C6AB4)
 I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
@@ -223,7 +275,7 @@ I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (D:\MDK5\ARM\ARMCC\include\assert.h)(0x599ECD2A)
-I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EE3285F)
+I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EEADA92)
 I (..\..\SYSTEM\hc32f072.h)(0x5CE10284)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0plus.h)(0x5A8E1FE2)
 I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h)(0x5A5595E2)
@@ -233,4 +285,4 @@ I (..\..\SYSTEM\system_hc32f072.h)(0x5CE10E47)
 I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
 I (..\..\SYSTEM\interrupts_hc32f072.h)(0x5CE115AB)
 I (..\..\DRIVER\inc\ddl_device.h)(0x5D32DBF3)
-F (..\..\README\readme.txt)(0x5EE82A3A)()
+F (..\..\README\readme.txt)(0x5EEB122E)()

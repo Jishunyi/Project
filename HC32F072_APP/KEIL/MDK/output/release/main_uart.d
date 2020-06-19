@@ -1,6 +1,7 @@
 .\output\release\main_uart.o: ..\..\USER\main_uart.c
+.\output\release\main_uart.o: ..\..\USER\user.h
 .\output\release\main_uart.o: ..\..\USER\uart_pro.h
-.\output\release\main_uart.o: ..\..\DRIVER\inc\sysctrl.h
+.\output\release\main_uart.o: ..\..\DRIVER\inc\gpio.h
 .\output\release\main_uart.o: ..\..\DRIVER\inc\ddl.h
 .\output\release\main_uart.o: ..\..\SYSTEM\base_types.h
 .\output\release\main_uart.o: D:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
@@ -16,9 +17,11 @@
 .\output\release\main_uart.o: D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h
 .\output\release\main_uart.o: ..\..\SYSTEM\system_hc32f072.h
 .\output\release\main_uart.o: ..\..\DRIVER\inc\sysctrl.h
-.\output\release\main_uart.o: ..\..\SYSTEM\interrupts_hc32f072.h
 .\output\release\main_uart.o: ..\..\DRIVER\inc\ddl.h
+.\output\release\main_uart.o: ..\..\SYSTEM\interrupts_hc32f072.h
 .\output\release\main_uart.o: ..\..\DRIVER\inc\ddl_device.h
-.\output\release\main_uart.o: ..\..\USER\user.h
-.\output\release\main_uart.o: D:\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\output\release\main_uart.o: ..\..\DRIVER\inc\uart.h
+.\output\release\main_uart.o: ..\..\USER\user.h
+.\output\release\main_uart.o: ..\..\USER\wdt_pro.h
+.\output\release\main_uart.o: ..\..\DRIVER\inc\wdt.h
+.\output\release\main_uart.o: ..\..\USER\gpio_pro.h

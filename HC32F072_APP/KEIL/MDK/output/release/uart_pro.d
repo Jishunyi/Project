@@ -1,4 +1,5 @@
 .\output\release\uart_pro.o: ..\..\USER\uart_pro.c
+.\output\release\uart_pro.o: ..\..\USER\uart_pro.h
 .\output\release\uart_pro.o: ..\..\DRIVER\inc\gpio.h
 .\output\release\uart_pro.o: ..\..\DRIVER\inc\ddl.h
 .\output\release\uart_pro.o: ..\..\SYSTEM\base_types.h
@@ -19,6 +20,8 @@
 .\output\release\uart_pro.o: ..\..\SYSTEM\interrupts_hc32f072.h
 .\output\release\uart_pro.o: ..\..\DRIVER\inc\ddl_device.h
 .\output\release\uart_pro.o: ..\..\DRIVER\inc\uart.h
-.\output\release\uart_pro.o: ..\..\USER\uart_pro.h
 .\output\release\uart_pro.o: ..\..\USER\user.h
-.\output\release\uart_pro.o: D:\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\output\release\uart_pro.o: ..\..\USER\uart_pro.h
+.\output\release\uart_pro.o: ..\..\USER\wdt_pro.h
+.\output\release\uart_pro.o: ..\..\DRIVER\inc\wdt.h
+.\output\release\uart_pro.o: ..\..\USER\gpio_pro.h
