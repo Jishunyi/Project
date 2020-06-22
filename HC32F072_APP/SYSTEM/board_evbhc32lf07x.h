@@ -161,8 +161,8 @@
 #define EVB_CAN_RX_PIN      GpioPin8
 #define EVB_CAN_TX_PORT     GpioPortB
 #define EVB_CAN_TX_PIN      GpioPin9
-#define EVB_CAN_STB_PORT    GpioPortD
-#define EVB_CAN_STB_PIN     GpioPin5
+#define EVB_CAN_STB_PORT    GpioPortA
+#define EVB_CAN_STB_PIN     GpioPin8
 
 ///< I2C EEPROM
 #ifdef BOARD_EVBHC32LF07X_V11

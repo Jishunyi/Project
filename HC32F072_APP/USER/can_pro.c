@@ -32,37 +32,37 @@ void Can_IRQHandler(void)
     }
 }
 
-//< 系统时钟初始化(8MHz for CanClk)
+//系统时钟初始化(12MHz for CanClk)
 void App_SysClkInit(void)
 {
-    ///< 切换时钟前（根据外部高速晶振）设置XTH频率范围,配置晶振参数，使能目标时钟，此处为8MHz
+    //切换时钟前（根据外部高速晶振）设置XTH频率范围,配置晶振参数，使能目标时钟，此处为12MHz
     Sysctrl_SetXTHFreq(SysctrlXthFreq6_12MHz);
     Sysctrl_XTHDriverCfg(SysctrlXtalDriver3);
     Sysctrl_SetXTHStableTime(SysctrlXthStableCycle16384);
     Sysctrl_ClkSourceEnable(SysctrlClkXTH, TRUE);
     delay1ms(10);
 
-    ///< 时钟切换
+    //时钟切换
     Sysctrl_SysClkSwitch(SysctrlClkXTH);
 }
 
-//< CAN GPIO 配置
+//CAN GPIO 配置
 void App_CanGpioInit(void)
 {
     stc_gpio_cfg_t stcGpioCfg;
 
     Sysctrl_SetPeripheralGate(SysctrlPeripheralGpio, TRUE);
 
-    ///< 端口方向配置->输入
+    //端口方向配置->输入
     stcGpioCfg.enDir = GpioDirIn;
-    ///< 端口驱动能力配置->高驱动能力
+    //端口驱动能力配置->高驱动能力
     stcGpioCfg.enDrv = GpioDrvL;
-    ///< 端口上下拉配置->无
+    //端口上下拉配置->无
     stcGpioCfg.enPu = GpioPuDisable;
     stcGpioCfg.enPd = GpioPdDisable;
-    ///< 端口开漏输出配置->开漏输出关闭
+    //端口开漏输出配置->开漏输出关闭
     stcGpioCfg.enOD = GpioOdDisable;
-    ///< 端口输入/输出值寄存器总线控制模式配置->AHB
+    //端口输入/输出值寄存器总线控制模式配置->AHB
     stcGpioCfg.enCtrlMode = GpioAHB;
 
     Gpio_Init(EVB_CAN_RX_PORT, EVB_CAN_RX_PIN, &stcGpioCfg);
@@ -70,16 +70,16 @@ void App_CanGpioInit(void)
     Gpio_Init(EVB_CAN_TX_PORT, EVB_CAN_TX_PIN, &stcGpioCfg);
     Gpio_Init(EVB_CAN_STB_PORT, EVB_CAN_STB_PIN, &stcGpioCfg);
 
-    ///<CAN RX\TX复用功能配置
+    //CAN RX\TX复用功能配置
     Gpio_SetAfMode(EVB_CAN_RX_PORT, EVB_CAN_RX_PIN, GpioAf1);
     Gpio_SetAfMode(EVB_CAN_TX_PORT, EVB_CAN_TX_PIN, GpioAf1);
 
-    ///<STB 低-PHY有效
+    //STB 低-PHY有效
     Gpio_ClrIO(EVB_CAN_STB_PORT, EVB_CAN_STB_PIN);
 }
 
-//< CAN 初始化配置
-void App_CanInit(void)
+//CAN 初始化配置
+void App_CanInit(uint32_t Baud)
 {
     stc_can_init_config_t   stcCanInitCfg;
     stc_can_filter_t        stcFilter;
@@ -87,7 +87,7 @@ void App_CanInit(void)
 
     Sysctrl_SetPeripheralGate(SysctrlPeripheralCan, TRUE);
 
-    //<<CAN 波特率配置
+    //CAN 波特率配置
     stcCanInitCfg.stcCanBt.PRESC = 1-1;
     stcCanInitCfg.stcCanBt.SEG_1 = 5-2;
     stcCanInitCfg.stcCanBt.SEG_2 = 3-1;
@@ -102,7 +102,7 @@ void App_CanInit(void)
 
     CAN_Init(&stcCanInitCfg);
 
-    //<<CAN 滤波器配置
+    //CAN 滤波器配置
     stcFilter.enAcfFormat = CanAllFrames;
     stcFilter.enFilterSel = CanFilterSel1;
     stcFilter.u32CODE     = 0x00000352;
@@ -110,7 +110,7 @@ void App_CanInit(void)
     CAN_FilterConfig(&stcFilter, TRUE);
 
 
-    //<<Can Irq Enable
+    //Can Irq Enable
     CAN_IrqCmd(CanRxIrqEn, TRUE);
 
     EnableNvic(CAN_IRQn, IrqLevel0, TRUE);

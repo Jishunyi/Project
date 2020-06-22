@@ -21,6 +21,8 @@
 .\output\release\uart_pro.o: ..\..\DRIVER\inc\ddl_device.h
 .\output\release\uart_pro.o: ..\..\DRIVER\inc\uart.h
 .\output\release\uart_pro.o: ..\..\USER\user.h
+.\output\release\uart_pro.o: ..\..\USER\can_pro.h
+.\output\release\uart_pro.o: ..\..\DRIVER\inc\can.h
 .\output\release\uart_pro.o: ..\..\USER\uart_pro.h
 .\output\release\uart_pro.o: ..\..\USER\wdt_pro.h
 .\output\release\uart_pro.o: ..\..\DRIVER\inc\wdt.h

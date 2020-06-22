@@ -23,9 +23,9 @@
 /*****************************************************************************
  * Function implementation
  ******************************************************************************/
-void App_SysClkInit(void);
-void App_CanGpioInit(void);
-void App_CanInit(void);
+void App_SysClkInit(void);					//系统时钟初始化(12MHz for CanClk)
+void App_CanGpioInit(void);					//CAN GPIO 配置
+void App_CanInit(uint32_t Baud);		//CAN初始化设置		//传入波特率
 
 #endif
 /******************************************************************************

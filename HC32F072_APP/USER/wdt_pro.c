@@ -46,9 +46,9 @@ void App_WdtInit(void)
     //开启WDT外设时钟
     Sysctrl_SetPeripheralGate(SysctrlPeripheralWdt,TRUE);
     //WDT 初始化
-		//Wdt_Init(WdtResetEn, WdtT820ms); 				//超时未喂狗则触发复位
-		Wdt_Init(WdtIntEn, WdtT51ms); 					//超时未喂狗则触发中断
-		EnableNvic(WDT_IRQn, IrqLevel3, TRUE); 	//开启NVIC中断
+		Wdt_Init(WdtResetEn, WdtT820ms); 				//超时未喂狗则触发复位
+		//Wdt_Init(WdtIntEn, WdtT51ms); 						//超时未喂狗则触发中断
+		//EnableNvic(WDT_IRQn, IrqLevel3, TRUE); 		//开启NVIC中断
 }
  
  /******************************************************************************

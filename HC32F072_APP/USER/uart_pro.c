@@ -138,7 +138,6 @@ void App_UartSend(M0P_UART_TypeDef* UARTx, const uint8_t *DataSendBuffer, const 
 				Uart1TxCnt = 0;
 				Uart1TxMax = DataSendBufferLen;
 				memcpy((void *)Uart1TxData, DataSendBuffer, Uart1TxMax);
-			
 				//启动数据发送
 				Uart_SendDataIt(UARTx, Uart1TxData[0]);			//发送第一个字节 后续数据在中断中发送
 		}
