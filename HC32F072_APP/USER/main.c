@@ -3,22 +3,16 @@
  * @Author       : Shunyi
  * @Date         : 2020-06-10 08:29:05
  * @LastEditors  : Shunyi
- * @LastEditTime : 2020-06-16 09:24:10
+ * @LastEditTime : 2020-06-23 15:03:00
  ******************************************************************************/
 
 /******************************************************************************
  * Include files
  ******************************************************************************/
-#include "uart.h"
-#include "sysctrl.h"
-#include "uart_pro.h"
-
+#include "user.h"
 /******************************************************************************
  * Local variable definitions ('static')                                      *
  ******************************************************************************/
-extern volatile uint8_t u8RxData;
-extern volatile uint8_t u8TxCnt;
-extern volatile uint8_t u8RxCnt;
 
 /******************************************************************************/
 /**\function 	main()
@@ -26,21 +20,19 @@ extern volatile uint8_t u8RxCnt;
  * \note 			Uart中断收发数据 返回该字节的取反值
  ******************************************************************************/
 int32_t main(void)
-{      
-    //串口引脚配置
-    App_PortInit();
-    
-    //串口配置
-    App_UartCfg();
-        
+{    
+		//系统初始化
+		System_Init();
+		
+		//SendToMPU(); 										//发送指令到显示屏				//未完成
     while(1)
     {
-        if(u8RxCnt>=1)
-        {
-            u8RxCnt = 0;
-            Uart_SendDataIt(M0P_UART1, ~u8RxData); //启动UART1发送第一个字节         
-        }
-
+				Wdt_Feed(); 										//喂狗
+				
+				ParseFromCtr(ParseModeNoml); 		//解析控制柜传入数据			//未完成
+				//SendToMPU(); 										//发送指令到显示屏				//未完成
+				ParseFromMPU(); 								//解析显示屏回传数据			//未完成
+				//SendToCtr();										//回传数据到控制柜				//未完成
     }
 }
 

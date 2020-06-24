@@ -3,7 +3,7 @@
  * @Author       : Shunyi
  * @Date         : 2020-06-11 08:33:55
  * @LastEditors  : Shunyi
- * @LastEditTime : 2020-06-18 15:03:00
+ * @LastEditTime : 2020-06-23 15:03:00
  ******************************************************************************/
 
 /******************************************************************************
@@ -37,12 +37,12 @@ void Uart1_IRQHandler(void)
 				Uart1RxData[Uart1RxCnt] = Uart_ReceiveData(M0P_UART1);		//接收数据
 			
 				Uart1RxCnt++;
-				DataFromMPUFlag = 0; //接收未完成
+				DataFromMPUFlag = FALSE; //接收未完成
 				
 				if(Uart1RxCnt >= Uart1RxMax)															//接收结束
 				{
 						Uart1RxCnt = 0;
-						DataFromMPUFlag = 1; //接收完成
+						DataFromMPUFlag = TRUE; //接收完成
 						memcpy((void *)DataFromMPUBuffer, Uart1RxData, DataFromMPULen); //将接收到的数据取出
 					
 						Uart_DisableIrq(M0P_UART1, UartRxIrq);            		//禁止UART1接收功能

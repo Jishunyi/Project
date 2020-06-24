@@ -21,3 +21,12 @@
 .\output\release\can_pro.o: ..\..\DRIVER\inc\ddl_device.h
 .\output\release\can_pro.o: ..\..\DRIVER\inc\can.h
 .\output\release\can_pro.o: ..\..\DRIVER\inc\gpio.h
+.\output\release\can_pro.o: ..\..\USER\user.h
+.\output\release\can_pro.o: ..\..\DRIVER\inc\flash.h
+.\output\release\can_pro.o: ..\..\USER\can_pro.h
+.\output\release\can_pro.o: ..\..\USER\uart_pro.h
+.\output\release\can_pro.o: ..\..\DRIVER\inc\uart.h
+.\output\release\can_pro.o: ..\..\USER\user.h
+.\output\release\can_pro.o: ..\..\USER\wdt_pro.h
+.\output\release\can_pro.o: ..\..\DRIVER\inc\wdt.h
+.\output\release\can_pro.o: ..\..\USER\gpio_pro.h

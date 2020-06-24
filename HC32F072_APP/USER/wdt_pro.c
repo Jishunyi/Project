@@ -3,7 +3,7 @@
  * @Author       : Shunyi
  * @Date         : 2020-06-11 08:33:55
  * @LastEditors  : Shunyi
- * @LastEditTime : 2020-06-18 15:03:00
+ * @LastEditTime : 2020-06-23 15:03:00
  ******************************************************************************/
  
  /******************************************************************************
@@ -41,12 +41,12 @@ void Wdt_IRQHandler(void)
 }
 
 //看门狗初始化
-void App_WdtInit(void)
+void App_WdtInit(en_wdt_time_t Time)
 {
     //开启WDT外设时钟
     Sysctrl_SetPeripheralGate(SysctrlPeripheralWdt,TRUE);
     //WDT 初始化
-		Wdt_Init(WdtResetEn, WdtT820ms); 				//超时未喂狗则触发复位
+		Wdt_Init(WdtResetEn, Time); 				//超时未喂狗则触发复位
 		//Wdt_Init(WdtIntEn, WdtT51ms); 						//超时未喂狗则触发中断
 		//EnableNvic(WDT_IRQn, IrqLevel3, TRUE); 		//开启NVIC中断
 }

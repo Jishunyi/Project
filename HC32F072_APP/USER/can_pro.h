@@ -3,7 +3,7 @@
  * @Author       : Shunyi
  * @Date         : 2020-06-11 08:33:55
  * @LastEditors  : Shunyi
- * @LastEditTime : 2020-06-18 15:03:00
+ * @LastEditTime : 2020-06-23 15:03:00
  ******************************************************************************/
  
 #ifndef  __CAN_PRO_H_
@@ -16,6 +16,8 @@
 #include "can.h"
 #include "gpio.h"
 
+#include "user.h"
+
 /******************************************************************************
  * Local pre-processor symbols/macros ('#define')                            
  ******************************************************************************/
@@ -23,9 +25,8 @@
 /*****************************************************************************
  * Function implementation
  ******************************************************************************/
-void App_SysClkInit(void);					//系统时钟初始化(12MHz for CanClk)
-void App_CanGpioInit(void);					//CAN GPIO 配置
-void App_CanInit(uint32_t Baud);		//CAN初始化设置		//传入波特率
+void App_CANInit(uint32_t Mode); //CAN初始化设置		//传入波特率
+void App_CANSend(uint32_t ID, const uint8_t *DataSendBuffer, const uint8_t DataSendBufferLen); //CAN发送数据
 
 #endif
 /******************************************************************************

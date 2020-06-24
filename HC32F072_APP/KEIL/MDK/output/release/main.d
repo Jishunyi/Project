@@ -1,6 +1,6 @@
 .\output\release\main.o: ..\..\USER\main.c
-.\output\release\main.o: ..\..\USER\can_pro.h
-.\output\release\main.o: ..\..\DRIVER\inc\sysctrl.h
+.\output\release\main.o: ..\..\USER\user.h
+.\output\release\main.o: ..\..\DRIVER\inc\flash.h
 .\output\release\main.o: ..\..\DRIVER\inc\ddl.h
 .\output\release\main.o: ..\..\SYSTEM\base_types.h
 .\output\release\main.o: D:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
@@ -16,8 +16,15 @@
 .\output\release\main.o: D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h
 .\output\release\main.o: ..\..\SYSTEM\system_hc32f072.h
 .\output\release\main.o: ..\..\DRIVER\inc\sysctrl.h
-.\output\release\main.o: ..\..\SYSTEM\interrupts_hc32f072.h
 .\output\release\main.o: ..\..\DRIVER\inc\ddl.h
+.\output\release\main.o: ..\..\SYSTEM\interrupts_hc32f072.h
 .\output\release\main.o: ..\..\DRIVER\inc\ddl_device.h
-.\output\release\main.o: ..\..\DRIVER\inc\can.h
 .\output\release\main.o: ..\..\USER\can_pro.h
+.\output\release\main.o: ..\..\DRIVER\inc\can.h
+.\output\release\main.o: ..\..\DRIVER\inc\gpio.h
+.\output\release\main.o: ..\..\USER\user.h
+.\output\release\main.o: ..\..\USER\uart_pro.h
+.\output\release\main.o: ..\..\DRIVER\inc\uart.h
+.\output\release\main.o: ..\..\USER\wdt_pro.h
+.\output\release\main.o: ..\..\DRIVER\inc\wdt.h
+.\output\release\main.o: ..\..\USER\gpio_pro.h
