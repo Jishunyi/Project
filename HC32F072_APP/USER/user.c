@@ -3,7 +3,7 @@
  * @Author       : Shunyi
  * @Date         : 2020-06-11 08:33:55
  * @LastEditors  : Shunyi
- * @LastEditTime : 2020-06-23 15:03:00
+ * @LastEditTime : 2020-06-30 15:26:42
  ******************************************************************************/
  
  /******************************************************************************
@@ -23,13 +23,15 @@ uint8_t DataToCtrBuffer[DataToCtrLen]; 				//回传到控制柜的指令数据					//待发送
 uint8_t DataFromCANFlag = FALSE ; 						//回传到控制柜的指令的标志位
 
 //UART
-stc_uart_datatompu_t DataToMPU = {0x5A, 0xA5, 0x05, 0x82, 0x10, 0x03, 0x10, 0x00}; 		//控制显示屏的指令 //已解析
+stc_uart_datatompu_t DataToMPU = {0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xAA, 0x00, 0x81}; 		//控制显示屏的指令 //已解析
 uint8_t DataToMPUBuffer[DataToMPULen]; 				//控制显示屏的指令 							//待发送
 uint8_t DataFromMPUBuffer[DataFromMPULen]; 		//显示屏回传的指令	数据					//已接收
 uint8_t DataFromMPUFlag =FALSE ; 							//显示屏回传指令的标志位
 
-//解析模式
-uint32_t ParseModeAuto_i = 0;									//自动演示计数
+//自动演示模式
+uint32_t ParseModeAuto_unit 	= '0';									//自动演示 个位
+uint32_t ParseModeAuto_ten 		= '0';									//自动演示 十位
+uint32_t ParseModeAuto_arrow 	= 	1;									//自动演示 箭头
 
  /*******************************************************************************
  * Function implementation - global ('extern') and local ('static')
@@ -187,19 +189,74 @@ void ParseFromCtr(uint32_t Mode)	//解析控制柜传入数据
 		{
 				if(DataFromCANFlag == TRUE) //接收到数据
 				{
-					App_CANSend(IDFromCtrBuffer,DataFromCtrBuffer,DataToCtrLen);	//CAN发送数据
+						if(IDFromCtrBuffer == 0x600)	//ID正确
+						{
+								//楼层：
+								DataToMPU.DATA[2] = DataFromCtrBuffer[0]; //十位（高位）
+								DataToMPU.DATA[1] = DataFromCtrBuffer[1]; //个位（低位）
+							
+								//箭头：
+								if((DataFromCtrBuffer[3]&0x40) == 0x40) //上
+								{
+										DataToMPU.DATA[5] = 1;
+								}
+								else if((DataFromCtrBuffer[3]&0x20) == 0x20) //下
+								{
+										DataToMPU.DATA[5] = 2; 
+								}
+						}
 					DataFromCANFlag = FALSE;
 				}
 		}
 		else if(Mode == ParseModeAuto)	//自动演示模式
 		{
-				if(ParseModeAuto_i < 16)
+				delay1ms(1000);
+			
+				if((ParseModeAuto_ten <= '9') && (ParseModeAuto_unit <= '9') && (ParseModeAuto_arrow ==1)) //上行
 				{
-						
-						ParseModeAuto_i++;
+						DataToMPU.DATA[2] = ParseModeAuto_ten; 	//十位（高位）
+						DataToMPU.DATA[1] = ParseModeAuto_unit; //个位（低位）
+					
+						if(ParseModeAuto_unit < '9') //个位递增
+						{
+								ParseModeAuto_unit++;
+						}
+						else if(ParseModeAuto_unit == '9') //十位递增
+						{
+								ParseModeAuto_ten++;
+								if(ParseModeAuto_ten == '9') //上行演示结束
+								{
+										ParseModeAuto_arrow = 2; 
+								}
+						}
 				}
-		
+				else if((ParseModeAuto_ten >= '0') && (ParseModeAuto_unit >= '0') && (ParseModeAuto_arrow ==2)) //下行
+				{
+						DataToMPU.DATA[2] = ParseModeAuto_ten; 	//十位（高位）
+						DataToMPU.DATA[1] = ParseModeAuto_unit; //个位（低位）
+						if(ParseModeAuto_unit > '0') //个位递减
+						{
+								ParseModeAuto_unit--;
+						}
+						else if(ParseModeAuto_unit == '0') //十位递减
+						{
+								ParseModeAuto_ten--;
+								if(ParseModeAuto_ten == '0') //下行演示结束
+								{
+										ParseModeAuto_arrow = 1; 
+								}
+						}
+				}
+				else //初始楼层信息不为0-9
+				{
+						ParseModeAuto_unit 		= '0';									//自动演示 个位
+						ParseModeAuto_ten 		= '0';									//自动演示 十位
+						ParseModeAuto_arrow 	= 	1;									//自动演示 箭头
+				}
 		}
+		//计算校验位
+		DataToMPU.CRC =  (DataToMPU.DATA[0] ^ DataToMPU.DATA[1] ^ DataToMPU.DATA[2]^ DataToMPU.DATA[3] 
+						^ DataToMPU.DATA[4]^ DataToMPU.DATA[5] ^ DataToMPU.DATA[6] ^ DataToMPU.DATA[7]) & 0x7f;
 }
 
 //发送指令到显示屏

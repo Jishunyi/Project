@@ -1,6 +1,6 @@
 Dependencies for Project 'HC32F072', Target 'APP': (DO NOT MODIFY !)
-F (..\..\USER\can_pro.c)(0x5EF2F868)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\can_pro.o --omf_browse .\output\release\can_pro.crf --depend .\output\release\can_pro.d)
-I (..\..\USER\can_pro.h)(0x5EF2EF71)
+F (..\..\USER\can_pro.c)(0x5EFAD075)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\can_pro.o --omf_browse .\output\release\can_pro.crf --depend .\output\release\can_pro.d)
+I (..\..\USER\can_pro.h)(0x5EFAD09B)
 I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
 I (..\..\DRIVER\inc\ddl.h)(0x5D0877E4)
 I (..\..\SYSTEM\base_types.h)(0x5D2C6AB4)
@@ -20,15 +20,15 @@ I (..\..\SYSTEM\interrupts_hc32f072.h)(0x5CE115AB)
 I (..\..\DRIVER\inc\ddl_device.h)(0x5D32DBF3)
 I (..\..\DRIVER\inc\can.h)(0x5D244681)
 I (..\..\DRIVER\inc\gpio.h)(0x5D2C69D8)
-I (..\..\USER\user.h)(0x5EF2F2FA)
+I (..\..\USER\user.h)(0x5EFAD0BD)
 I (..\..\DRIVER\inc\flash.h)(0x5CDD4F7B)
-I (..\..\USER\uart_pro.h)(0x5EF178F0)
+I (..\..\USER\uart_pro.h)(0x5EFAD0A3)
 I (..\..\DRIVER\inc\uart.h)(0x5D2C6849)
-I (..\..\USER\wdt_pro.h)(0x5EF2E185)
+I (..\..\USER\wdt_pro.h)(0x5EFAD0B2)
 I (..\..\DRIVER\inc\wdt.h)(0x5D2C687F)
-I (..\..\USER\gpio_pro.h)(0x5EF178F9)
-F (..\..\USER\uart_pro.c)(0x5EF2F7B1)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\uart_pro.o --omf_browse .\output\release\uart_pro.crf --depend .\output\release\uart_pro.d)
-I (..\..\USER\uart_pro.h)(0x5EF178F0)
+I (..\..\USER\gpio_pro.h)(0x5EFAD0AB)
+F (..\..\USER\uart_pro.c)(0x5EFAD078)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\uart_pro.o --omf_browse .\output\release\uart_pro.crf --depend .\output\release\uart_pro.d)
+I (..\..\USER\uart_pro.h)(0x5EFAD0A3)
 I (..\..\DRIVER\inc\gpio.h)(0x5D2C69D8)
 I (..\..\DRIVER\inc\ddl.h)(0x5D0877E4)
 I (..\..\SYSTEM\base_types.h)(0x5D2C6AB4)
@@ -48,15 +48,15 @@ I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
 I (..\..\SYSTEM\interrupts_hc32f072.h)(0x5CE115AB)
 I (..\..\DRIVER\inc\ddl_device.h)(0x5D32DBF3)
 I (..\..\DRIVER\inc\uart.h)(0x5D2C6849)
-I (..\..\USER\user.h)(0x5EF2F2FA)
+I (..\..\USER\user.h)(0x5EFAD0BD)
 I (..\..\DRIVER\inc\flash.h)(0x5CDD4F7B)
-I (..\..\USER\can_pro.h)(0x5EF2EF71)
+I (..\..\USER\can_pro.h)(0x5EFAD09B)
 I (..\..\DRIVER\inc\can.h)(0x5D244681)
-I (..\..\USER\wdt_pro.h)(0x5EF2E185)
+I (..\..\USER\wdt_pro.h)(0x5EFAD0B2)
 I (..\..\DRIVER\inc\wdt.h)(0x5D2C687F)
-I (..\..\USER\gpio_pro.h)(0x5EF178F9)
-F (..\..\USER\gpio_pro.c)(0x5EF178C9)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\gpio_pro.o --omf_browse .\output\release\gpio_pro.crf --depend .\output\release\gpio_pro.d)
-I (..\..\USER\gpio_pro.h)(0x5EF178F9)
+I (..\..\USER\gpio_pro.h)(0x5EFAD0AB)
+F (..\..\USER\gpio_pro.c)(0x5EFAD07F)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\gpio_pro.o --omf_browse .\output\release\gpio_pro.crf --depend .\output\release\gpio_pro.d)
+I (..\..\USER\gpio_pro.h)(0x5EFAD0AB)
 I (..\..\DRIVER\inc\gpio.h)(0x5D2C69D8)
 I (..\..\DRIVER\inc\ddl.h)(0x5D0877E4)
 I (..\..\SYSTEM\base_types.h)(0x5D2C6AB4)
@@ -75,8 +75,8 @@ I (..\..\SYSTEM\system_hc32f072.h)(0x5CE10E47)
 I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
 I (..\..\SYSTEM\interrupts_hc32f072.h)(0x5CE115AB)
 I (..\..\DRIVER\inc\ddl_device.h)(0x5D32DBF3)
-F (..\..\USER\wdt_pro.c)(0x5EF2E17E)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\wdt_pro.o --omf_browse .\output\release\wdt_pro.crf --depend .\output\release\wdt_pro.d)
-I (..\..\USER\wdt_pro.h)(0x5EF2E185)
+F (..\..\USER\wdt_pro.c)(0x5EFAD086)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\wdt_pro.o --omf_browse .\output\release\wdt_pro.crf --depend .\output\release\wdt_pro.d)
+I (..\..\USER\wdt_pro.h)(0x5EFAD0B2)
 I (..\..\DRIVER\inc\wdt.h)(0x5D2C687F)
 I (..\..\DRIVER\inc\ddl.h)(0x5D0877E4)
 I (..\..\SYSTEM\base_types.h)(0x5D2C6AB4)
@@ -96,8 +96,8 @@ I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
 I (..\..\SYSTEM\interrupts_hc32f072.h)(0x5CE115AB)
 I (..\..\DRIVER\inc\ddl_device.h)(0x5D32DBF3)
 I (..\..\DRIVER\inc\gpio.h)(0x5D2C69D8)
-F (..\..\USER\user.c)(0x5EF2F946)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\user.o --omf_browse .\output\release\user.crf --depend .\output\release\user.d)
-I (..\..\USER\user.h)(0x5EF2F2FA)
+F (..\..\USER\user.c)(0x5EFAD08F)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\user.o --omf_browse .\output\release\user.crf --depend .\output\release\user.d)
+I (..\..\USER\user.h)(0x5EFAD0BD)
 I (..\..\DRIVER\inc\flash.h)(0x5CDD4F7B)
 I (..\..\DRIVER\inc\ddl.h)(0x5D0877E4)
 I (..\..\SYSTEM\base_types.h)(0x5D2C6AB4)
@@ -116,42 +116,42 @@ I (..\..\SYSTEM\system_hc32f072.h)(0x5CE10E47)
 I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
 I (..\..\SYSTEM\interrupts_hc32f072.h)(0x5CE115AB)
 I (..\..\DRIVER\inc\ddl_device.h)(0x5D32DBF3)
-I (..\..\USER\can_pro.h)(0x5EF2EF71)
-I (..\..\DRIVER\inc\can.h)(0x5D244681)
-I (..\..\DRIVER\inc\gpio.h)(0x5D2C69D8)
-I (..\..\USER\uart_pro.h)(0x5EF178F0)
-I (..\..\DRIVER\inc\uart.h)(0x5D2C6849)
-I (..\..\USER\wdt_pro.h)(0x5EF2E185)
-I (..\..\DRIVER\inc\wdt.h)(0x5D2C687F)
-I (..\..\USER\gpio_pro.h)(0x5EF178F9)
-F (..\..\USER\main.c)(0x5EF2F5FF)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\main.o --omf_browse .\output\release\main.crf --depend .\output\release\main.d)
-I (..\..\USER\user.h)(0x5EF2F2FA)
-I (..\..\DRIVER\inc\flash.h)(0x5CDD4F7B)
-I (..\..\DRIVER\inc\ddl.h)(0x5D0877E4)
-I (..\..\SYSTEM\base_types.h)(0x5D2C6AB4)
-I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
-I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (D:\MDK5\ARM\ARMCC\include\assert.h)(0x599ECD2A)
-I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EF050AA)
-I (..\..\SYSTEM\hc32f072.h)(0x5CE10284)
-I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0plus.h)(0x5A8E1FE2)
-I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h)(0x5A5595E2)
-I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_compiler.h)(0x5A8E1FE2)
-I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h)(0x5A8E1FE2)
-I (..\..\SYSTEM\system_hc32f072.h)(0x5CE10E47)
-I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
-I (..\..\SYSTEM\interrupts_hc32f072.h)(0x5CE115AB)
-I (..\..\DRIVER\inc\ddl_device.h)(0x5D32DBF3)
-I (..\..\USER\can_pro.h)(0x5EF2EF71)
+I (..\..\USER\can_pro.h)(0x5EFAD09B)
 I (..\..\DRIVER\inc\can.h)(0x5D244681)
 I (..\..\DRIVER\inc\gpio.h)(0x5D2C69D8)
-I (..\..\USER\uart_pro.h)(0x5EF178F0)
+I (..\..\USER\uart_pro.h)(0x5EFAD0A3)
 I (..\..\DRIVER\inc\uart.h)(0x5D2C6849)
-I (..\..\USER\wdt_pro.h)(0x5EF2E185)
+I (..\..\USER\wdt_pro.h)(0x5EFAD0B2)
 I (..\..\DRIVER\inc\wdt.h)(0x5D2C687F)
-I (..\..\USER\gpio_pro.h)(0x5EF178F9)
+I (..\..\USER\gpio_pro.h)(0x5EFAD0AB)
+F (..\..\USER\main.c)(0x5EFAD06E)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\main.o --omf_browse .\output\release\main.crf --depend .\output\release\main.d)
+I (..\..\USER\user.h)(0x5EFAD0BD)
+I (..\..\DRIVER\inc\flash.h)(0x5CDD4F7B)
+I (..\..\DRIVER\inc\ddl.h)(0x5D0877E4)
+I (..\..\SYSTEM\base_types.h)(0x5D2C6AB4)
+I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (D:\MDK5\ARM\ARMCC\include\assert.h)(0x599ECD2A)
+I (..\..\SYSTEM\board_evbhc32lf07x.h)(0x5EF050AA)
+I (..\..\SYSTEM\hc32f072.h)(0x5CE10284)
+I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0plus.h)(0x5A8E1FE2)
+I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h)(0x5A5595E2)
+I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_compiler.h)(0x5A8E1FE2)
+I (D:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h)(0x5A8E1FE2)
+I (..\..\SYSTEM\system_hc32f072.h)(0x5CE10E47)
+I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
+I (..\..\SYSTEM\interrupts_hc32f072.h)(0x5CE115AB)
+I (..\..\DRIVER\inc\ddl_device.h)(0x5D32DBF3)
+I (..\..\USER\can_pro.h)(0x5EFAD09B)
+I (..\..\DRIVER\inc\can.h)(0x5D244681)
+I (..\..\DRIVER\inc\gpio.h)(0x5D2C69D8)
+I (..\..\USER\uart_pro.h)(0x5EFAD0A3)
+I (..\..\DRIVER\inc\uart.h)(0x5D2C6849)
+I (..\..\USER\wdt_pro.h)(0x5EFAD0B2)
+I (..\..\DRIVER\inc\wdt.h)(0x5D2C687F)
+I (..\..\USER\gpio_pro.h)(0x5EFAD0AB)
 F (..\..\SYSTEM\system_hc32f072.c)(0x5CE10E29)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\system_hc32f072.o --omf_browse .\output\release\system_hc32f072.crf --depend .\output\release\system_hc32f072.d)
 I (..\..\SYSTEM\base_types.h)(0x5D2C6AB4)
 I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
@@ -244,7 +244,7 @@ I (..\..\SYSTEM\system_hc32f072.h)(0x5CE10E47)
 I (..\..\DRIVER\inc\sysctrl.h)(0x5EE1C3CB)
 I (..\..\SYSTEM\interrupts_hc32f072.h)(0x5CE115AB)
 I (..\..\DRIVER\inc\ddl_device.h)(0x5D32DBF3)
-F (..\..\DRIVER\src\can.c)(0x5D1B5077)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\can.o --omf_browse .\output\release\can.crf --depend .\output\release\can.d)
+F (..\..\DRIVER\src\can.c)(0x5EF96021)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\USER -I ..\..\SYSTEM -I ..\..\DRIVER\inc-I.\RTE\_APP-ID:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-ID:\MDK5\ARM\PACK\HDSC\HC32F072\1.0.1\Device\Include-D__UVISION_VERSION="525" -D_RTE_-o .\output\release\can.o --omf_browse .\output\release\can.crf --depend .\output\release\can.d)
 I (..\..\DRIVER\inc\can.h)(0x5D244681)
 I (..\..\DRIVER\inc\ddl.h)(0x5D0877E4)
 I (..\..\SYSTEM\base_types.h)(0x5D2C6AB4)

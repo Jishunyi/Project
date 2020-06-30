@@ -3,7 +3,7 @@
  * @Author       : Shunyi
  * @Date         : 2020-06-11 08:33:55
  * @LastEditors  : Shunyi
- * @LastEditTime : 2020-06-23 15:03:00
+ * @LastEditTime : 2020-06-30 15:26:42
  ******************************************************************************/
  
 #ifndef  __USER_H_
@@ -24,8 +24,8 @@
 #define DataToCtrLen 			8 					//回传到控制柜的指令长度
 #define DataFromCtrLen 		8 					//控制柜传入的指令长度
 
-#define DataToMPULen 			8 					//控制显示屏的指令长度
-#define DataFromMPULen 		8 					//显示屏回传的指令长度
+#define DataToMPULen 			11 					//控制显示屏的指令长度
+#define DataFromMPULen 		11 					//显示屏回传的指令长度
 
 #define CANSendMax 				64 					//CAN发送数据最大个数
 #define CANReceiveMax 		64 					//CAN接收数据最大个数
@@ -33,7 +33,7 @@
 #define UartSendMax 			64 					//UART发送数据最大个数
 #define UartReceiveMax 		64 					//UART接收数据最大个数
 
-#define CANBaud 					250000			//CAN波特率
+#define CANBaud 					20000				//CAN波特率
 #define UART1Baud 				9600				//UART1波特率
 
 #define ParseModeNoml 		0						//常规模式
@@ -44,12 +44,10 @@
  ******************************************************************************/
 typedef struct stc_uart_datatompu	//控制显示屏指令
 {
-    uint8_t	start[2];			//帧头	2byte
-    uint8_t len;     			//长度	1byte
-    uint8_t cmd;     			//指令	1byte
-    uint8_t adrsH;       	//地址H	1byte
-		uint8_t adrsL;       	//地址L	1byte
-		uint8_t data[2];      //数据	2byte
+    uint8_t	STX;							//帧头	1byte
+    uint8_t DATA[8];     			//长度	7byte
+    uint8_t CRC;     					//指令	1byte
+    uint8_t ETX;       				//帧尾	1byte
 } stc_uart_datatompu_t;
 
 typedef struct stc_can_datafromctr	//控制柜传入指令

@@ -3,7 +3,7 @@
  * @Author       : Shunyi
  * @Date         : 2020-06-11 08:33:55
  * @LastEditors  : Shunyi
- * @LastEditTime : 2020-06-23 15:03:00
+ * @LastEditTime : 2020-06-30 15:26:42
  ******************************************************************************/
 
 /******************************************************************************
@@ -83,16 +83,8 @@ void App_CANInit(uint32_t Baud)
 
 		Sysctrl_SetPeripheralGate(SysctrlPeripheralCan, TRUE);
 
-		if(Baud < 24000)
-		{
-			stcCanInitCfg.stcCanBt.SEG_1 = 13-2;
-			stcCanInitCfg.stcCanBt.SEG_2 = 3-1;
-		}
-		else if(Baud < 1000000)
-		{
-			stcCanInitCfg.stcCanBt.SEG_1 = 5-2;
-			stcCanInitCfg.stcCanBt.SEG_2 = 3-1;
-		}
+		stcCanInitCfg.stcCanBt.SEG_1 = 5-2;
+		stcCanInitCfg.stcCanBt.SEG_2 = 3-1;
 		stcCanInitCfg.stcCanBt.PRESC = ((4000000/Baud)/(stcCanInitCfg.stcCanBt.SEG_1+stcCanInitCfg.stcCanBt.SEG_2+3)-1); //倍频后为48M所以是48000000 //芯片内部时钟为4M
 		stcCanInitCfg.stcCanBt.SJW   = 3-1;
 
@@ -119,7 +111,8 @@ void App_CANInit(uint32_t Baud)
 	}
 }
 
-void App_CANSend(uint32_t ID, const uint8_t *DataSendBuffer, const uint8_t DataSendBufferLen) //CAN发送数据
+//CAN发送数据
+void App_CANSend(uint32_t ID, const uint8_t *DataSendBuffer, const uint8_t DataSendBufferLen)
 {
 		uint8_t i = 0;
 		stc_can_txframe_t stcTxFrame;
